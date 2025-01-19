@@ -1,14 +1,9 @@
-package java;
-
-
 import java.io.IOException;
 import java.net.InetSocketAddress;
 
 import com.sun.net.httpserver.HttpServer;
 import com.sun.net.httpserver.HttpHandler;
 import com.sun.net.httpserver.HttpExchange;
-import java.nio.file.Files;
-import java.nio.file.Paths;  // Add these imports
 
 public class Main {
     public static void main(String[] args) throws IOException {
@@ -21,9 +16,26 @@ public class Main {
 
     static class MyHandler implements HttpHandler {
         public void handle(HttpExchange exchange) throws IOException {
-            byte[] response = Files.readAllBytes(Paths.get("../html/index.html"));  // Adjusted path
-            exchange.sendResponseHeaders(200, response.length);
-            exchange.getResponseBody().write(response);
+            String response = "<!DOCTYPE html>" +
+                "<html>" +
+                "<head>" +
+                "<title>Java-based Website</title>" +
+                "<link rel='stylesheet' href='/main/css/style.css'>" +  // Adjusted path
+                "</head>" +
+                "<body>" +
+                "<h1>Welcome to my Java-based Website!</h1>" +
+                "<button id='myButton'>Click me</button>" +
+                "<script>" + 
+                "document.addEventListener('DOMContentLoaded', (event) => {" +
+                "    document.getElementById('myButton').addEventListener('click', () => {" +
+                "        alert('boo!');" +
+                "    });" +
+                "});" +
+                "</script>" +
+                "</body>" +
+                "</html>";
+            exchange.sendResponseHeaders(200, response.length());
+            exchange.getResponseBody().write(response.getBytes());
             exchange.getResponseBody().close();
         }
     }
