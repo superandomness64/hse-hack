@@ -1,0 +1,160 @@
+/* Add this to your main.css */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.menu-button {
+    font-size: 30px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.side-menu {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.side-menu button {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    background: none;
+    border: none;
+}
+
+.side-menu button:hover {
+    color: #f1f1f1;
+}
+
+.close-button {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* For the rest of your CSS code */
+
+/* CSS for header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* CSS for the title */
+.home-title {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+
+
+/* CSS for the link and icon */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a div {
+    display: flex;
+    align-items: center;
+}
+
+a img {
+    margin-left: 10px;
+}
+
+/* CSS for body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+
+
+/* CSS for h1 */
+h1 {
+    margin-top: 50px;
+    font-size: 36px;
+}
+
+/* CSS for button */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+body a {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+a div {
+    display: flex;
+    justify-content: center;
+}
+
+#lunchButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #555;
+}
+/* CSS to ensure PNG displays properly */
+header img {
+    width: 40px;    /* Adjust this as needed */
+    height: 40px;   /* Adjust this as needed */
+    object-fit: contain;  /* Ensures the image fits within the given dimensions */
+    display: block;
+}
+
+a img {
+    width: 40px;   /* Adjust size as needed */
+    height: 40px;  /* Adjust size as needed */
+    display: block; /* Ensures the image is an inline block */
+    /* Optional: Adding a border or background to see where the image is */
+    border: 1px solid red; 
+    background-color: lightgray;
+}
