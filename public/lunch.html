@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript-based Website</title>
+    <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* Sidebar styling */
+        .sidebar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: 0;
+            background-color: #333;
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+        }
+
+        .sidebar a {
+            padding: 8px 8px 8px 32px;
+            text-decoration: none;
+            font-size: 25px;
+            color: white;
+            display: block;
+            transition: 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #575757;
+        }
+
+        #menu-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 18px;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <button id="menu-button" onclick="openSideMenu()">Menu</button>
+        <div>
+            <div class="home-title">Hse comunnity</div>
+        </div>
+        <a href="/info">
+            <div>
+                <img src="img/questionmark_white.png" alt="?" width="40" height="40">
+            </div>
+        </a>
+    </header>
+    <div class="sidebar" id="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSideMenu()">&times;</a>
+        <a href="index.html">Home</a>
+        <a href="calender.html">calendar</a>
+        <a href="quickLinks.html">quick links</a>
+        <a href="clubs.html">Clubs</a>
+        <a href="info.html">Info</a>
+    </div>
+    <body>
+        <!-- (Your existing body content, header, sidebar, etc.) -->
+       
+        <h1>Welcome to the Lunch Menu!</h1>
+        <p>Here you'll find information about our lunch options.</p>
+   
+        <div class="calendar-container" id="calendar-content">Loading...</div>
+   
+        
+        <div id="calendar-content">Loading...</div>
+   
+        <script>
+            async function loadCalendar() {
+                try {
+                    const response = await fetch('https://calendar.hpsmenu.com/?school=2801&year=2025&month=01');
+                    const data = await response.text();
+                    document.getElementById('calendar-content').innerHTML = data;
+                } catch (error) {
+                    document.getElementById('calendar-content').innerText = 'Unable to load calendar. Please click the link to view the calendar.';
+                }
+            }
+        
+            loadCalendar();
+        </script>
+        
+       </body>
+   
+   
+       <a href="index.html">
+           <div>
+               <button id="homeButton">Back to Home</button>
+           </div>
+       </a>
+       <div>
+            <img src="img/65888fa0-8d86-4d0f-9663-e5c800091d09.pdf" alt="img/questionmark_white.png" width="40" height="40">
+        </div>
+       <p>If the calendar is not visible,
+           <a href="https://calendar.hpsmenu.com/?school=2801&year=2025&month=01">
+               <button id="pageButton">click here</button>
+           </a>
+       to view it directly.</p>    <script src="js/script.js"></script>
+    <script>
+        function openSideMenu() {
+            document.getElementById("sidebar").style.width = "250px";
+        }
+
+        function closeSideMenu() {
+            document.getElementById("sidebar").style.width = "0";
+        }
+    </script>
+</body>
