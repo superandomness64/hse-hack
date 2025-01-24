@@ -696,6 +696,12 @@ const fishersClubs = [
                                             clubs.forEach(club => {
                                                 const button = document.createElement('div');
                                                 button.className = 'button';
+                                                if(school == "Fishers"){
+                                                    button.style.backgroundColor = "red";
+                                                }else{
+
+                                                    button.style.backgroundColor = "blue";
+                                                }
                                                 button.innerHTML = `<h2>${club.name}</h2><em>${club.teacher}</em>`;
                                                 button.addEventListener('click', () => {
                                                     displayClubInfo(club);
