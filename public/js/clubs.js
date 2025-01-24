@@ -689,7 +689,7 @@ const fishersClubs = [
                                         const user = JSON.parse(localStorage.getItem('user'));
                                         const schoolName = user.school === 'hse' ? 'HSE' : 'Fishers';
                                         
-                                        function createButtonsFromClubs(clubs) {
+                                        function createButtonsFromClubs(clubs,school) {
                                             const container = document.getElementById('buttons-container');
                                             container.innerHTML = '';
                                         
@@ -734,9 +734,9 @@ const fishersClubs = [
                                             overlay.innerHTML = ''; // Clear previous content to avoid conflicts
                                         }
                                         if(schoolName=="Fishers"){
-                                        document.addEventListener('DOMContentLoaded', createButtonsFromClubs(fishersClubs));
+                                        document.addEventListener('DOMContentLoaded', createButtonsFromClubs(fishersClubs,schoolName));
                                         }else{
-                                            document.addEventListener('DOMContentLoaded', createButtonsFromClubs(hseClubs));
+                                            document.addEventListener('DOMContentLoaded', createButtonsFromClubs(hseClubs,schoolName));
                                         }
                             
                         
