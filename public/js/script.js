@@ -12,12 +12,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
     console.log(day);
     // Periods data
     const periods = [
-        { header: 'Block 1', time: '12:00 AM - 8:29Am', start: new Date(year+'-0'+month+'-'+day+'T00:00:00'), end: new Date(year+'-0'+month+'-'+(day)+'08:29:00') },
-        { header: 'Block 2', time: '8:30 AM - 9:53 AM', start: new Date(year+'-0'+month+'-'+day+'T08:30:00'), end: new Date(year+'-0'+month+'-'+day+'T09:53:00') },
-        { header: 'Block 3', time: '10:01 AM - 11:24 AM', start: new Date(year+'-0'+month+'-'+day+'T10:01:00'), end: new Date(year+'-0'+month+'-'+day+'T11:24:00') },
-        { header: 'Block 4', time: '11:32 AM - 1:32 PM', start: new Date(year+'-0'+month+'-'+day+'T11:32:00'), end: new Date(year+'-0'+month+'-'+day+'T13:32:00') },
-        { header: 'Block 5', time: '1:32 PM - 3:00 PM', start: new Date(year+'-0'+month+'-'+day+'T13:32:00'), end: new Date(year+'-0'+month+'-'+day+'T15:00:00') },
-        { header: 'Block 6', time: '3 PM - 11:59 pm', start: new Date(year+'-0'+month+'-'+day+'T15:00:00'), end: new Date(year+'-0'+month+'-'+(day)+'T23:59:00') },
+        { header: 'Block 0', time: '12:00 AM - 8:29Am', start: new Date(year+'-0'+month+'-'+day+'T00:00:00'), end: new Date(year+'-0'+month+'-'+(day)+'08:29:00') },
+        { header: 'Block 1', time: '8:30 AM - 9:53 AM', start: new Date(year+'-0'+month+'-'+day+'T08:30:00'), end: new Date(year+'-0'+month+'-'+day+'T09:53:00') },
+        { header: 'Block 2', time: '10:01 AM - 11:24 AM', start: new Date(year+'-0'+month+'-'+day+'T10:01:00'), end: new Date(year+'-0'+month+'-'+day+'T11:24:00') },
+        { header: 'Block 3', time: '11:32 AM - 1:32 PM', start: new Date(year+'-0'+month+'-'+day+'T11:32:00'), end: new Date(year+'-0'+month+'-'+day+'T13:32:00') },
+        { header: 'Block 4', time: '1:32 PM - 3:00 PM', start: new Date(year+'-0'+month+'-'+day+'T13:32:00'), end: new Date(year+'-0'+month+'-'+day+'T15:00:00') },
+        { header: 'Block: post school', time: '3 PM - 11:59 pm', start: new Date(year+'-0'+month+'-'+day+'T15:00:00'), end: new Date(year+'-0'+month+'-'+(day)+'T23:59:00') },
         
     ];
 
