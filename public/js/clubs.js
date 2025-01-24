@@ -278,6 +278,13 @@ const fishersClubs = [
                     image: "" // Add image URL if available
                 },
                 {
+                    name: "Fishers swimming tigers",
+                    teacher: "idk",
+                    description: "swimming in the water like tigers",
+                    meetingInfo: "every day of the week 3:15-:530 basically",
+                    image: "https://www.bing.com/images/search?view=detailV2&ccid=MztT9JvC&id=4B05A1D17FDCC41369C787009CB0844709B723E9&thid=OIP.MztT9JvCqRAG1yvrNUlcIgHaJQ&mediaurl=https%3a%2f%2fstatic.wixstatic.com%2fmedia%2f9e3042_b2df1104fad14e688d0b391914fc7691%7emv2.jpg%2fv1%2ffill%2fw_980%2ch_1226%2cal_c%2cq_85%2cusm_0.66_1.00_0.01%2cenc_auto%2fFAST+Logos+7.jpg&cdnurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.333b53f49bc2a91006d72beb35495c22%3frik%3d6SO3CUeEsJwAhw%26pid%3dImgRaw%26r%3d0&exph=1226&expw=980&q=fast+tigers+swimming+logo&simid=608053347285737218&FORM=IRPRST&ck=C4D40FC609AF354164CE395BC9A47D2E&selectedIndex=12&itb=0" // Add image URL if available
+                },
+                {
                     name: "FISHERS FIRE & EMERGENCY SERVICES CAREER EXPLORATION",
                     teacher: "Ashley Heckly",
                     description: "The goal of this club is to offer a space, within school, for students to have an opportunity to learn more about a career in the fire service. Through speakers, demonstrations, hands-on activities, and field trips, the students will interact with the different divisions within the fire department.",
