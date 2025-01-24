@@ -695,7 +695,6 @@ const fishersClubs = [
                                         ];
                                         const user = JSON.parse(localStorage.getItem('user'));
                                         const schoolName = user.school === 'hse' ? 'HSE' : 'Fishers';
-                                        const teacher = user.teacher;
                                         
                                         function createButtonsFromClubs(clubs,school,teacher) {
                                             const container = document.getElementById('buttons-container');
@@ -716,21 +715,6 @@ const fishersClubs = [
                                                 });
                                                 container.appendChild(button);
                                             });
-                                            if(teacher){
-                                                const button = document.createElement('div');
-                                                button.className = 'button';
-                                                if(school == "Fishers"){
-                                                    button.style.backgroundColor = "red";
-                                                }else{
-
-                                                    button.style.backgroundColor = "blue";
-                                                }
-                                                button.innerHTML = `<h2>add club</h2>`;
-                                                button.addEventListener('click', () => {
-                                                    
-                                                });
-                                                container.appendChild(button);
-                                            }
                                         }
                                         
                                         function displayClubInfo(club) {
@@ -757,9 +741,9 @@ const fishersClubs = [
                                             overlay.innerHTML = ''; // Clear previous content to avoid conflicts
                                         }
                                         if(schoolName=="Fishers"){
-                                        document.addEventListener('DOMContentLoaded', createButtonsFromClubs(fishersClubs,schoolName,teacher));
+                                        document.addEventListener('DOMContentLoaded', createButtonsFromClubs(fishersClubs,schoolName));
                                         }else{
-                                            document.addEventListener('DOMContentLoaded', createButtonsFromClubs(hseClubs,schoolName,teacher));
+                                            document.addEventListener('DOMContentLoaded', createButtonsFromClubs(hseClubs,schoolName));
                                         }
                             
                         
