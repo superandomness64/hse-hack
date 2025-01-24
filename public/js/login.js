@@ -9,7 +9,7 @@ teacher = false;
 
     }  s  
     if (name && email) {
-        localStorage.setItem('user', JSON.stringify({ name, email, schooll,teacher}));
+        localStorage.setItem('user', JSON.stringify({ name, email,  school, teacher}));
     } else {
         localStorage.setItem('user', JSON.stringify({ school }));
     }
