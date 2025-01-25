@@ -1,7 +1,5 @@
 document.addEventListener('DOMContentLoaded', (event) => {
-    document.getElementById('myButton').addEventListener('click', () => {
-        alert('boo!');
-    });
+   
     const today = new Date();
     const year = today.getFullYear();
     const month = today.getMonth()+1;
@@ -17,7 +15,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         { header: 'Block 2', time: '10:01 AM - 11:24 AM', start: new Date(year+'-0'+month+'-'+day+'T10:01:00'), end: new Date(year+'-0'+month+'-'+day+'T11:24:00') },
         { header: 'Block 3', time: '11:32 AM - 1:32 PM', start: new Date(year+'-0'+month+'-'+day+'T11:32:00'), end: new Date(year+'-0'+month+'-'+day+'T13:32:00') },
         { header: 'Block 4', time: '1:32 PM - 3:00 PM', start: new Date(year+'-0'+month+'-'+day+'T13:32:00'), end: new Date(year+'-0'+month+'-'+day+'T15:00:00') },
-        { header: 'Block: post school', time: '3 PM - 11:59 pm', start: new Date(year+'-0'+month+'-'+day+'T15:00:00'), end: new Date(year+'-0'+month+'-'+(day)+'T23:59:00') },
+        { header: 'Block 6', time: '3 PM - 11:59 pm', start: new Date(year+'-0'+month+'-'+day+'T15:00:00'), end: new Date(year+'-0'+month+'-'+(day)+'T23:59:00') },
         
     ];
 
